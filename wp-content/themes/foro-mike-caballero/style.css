@@ -1,0 +1,109 @@
+/*
+Theme Name: Foro Mike Caballero
+Author: Mike Caballero
+Version: 1.0
+*/
+:root {
+    --black: #161616;
+    --green: #346751;
+    --orange: #C84B31;
+    --yellow: #ECDBBA;
+}
+
+body, html {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a { text-decoration: none; }
+a:hover { color: var(--yellow); }
+
+p {
+    margin: 0;
+    padding: 0;
+}
+
+#menu_style li { margin: 0px 10px; }
+
+#menu_style li a { color: var(--green); }
+
+.foro-gallery { height: 70vh; }
+
+.foro-gallery img {
+    height: 70vh;
+    object-fit: cover;
+}
+
+.foro-description h1 {
+    font-size: 1.5rem;
+    margin: 25px 0px;
+    color: var(--green);
+}
+
+.foro-eventos h2 {
+    font-size: 1.5rem;
+    color: var(--orange);
+    text-align: center;
+}
+
+.foro-eventos img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+}
+
+.foro-eventos h3 {
+    color: var(--green);
+    font-size: 1.3rem;
+}
+
+.foro-eventos p:not(.foro-eventos--date) {
+    color: var(--black);
+}
+
+footer {
+    background-color: var(--orange);
+    color: var(--yellow);
+    justify-content: center;
+    display: flex;
+    align-items: center;
+}
+
+footer a { color: var(--yellow); }
+
+.foro-eventos--date { color: var(--orange); }
+
+.single-event {
+    margin-top: 25px;
+}
+
+.single-event img {
+    width: 100%;
+    height: 500px;
+    object-fit: contain;
+    text-align: center;
+}
+
+.single-event h1 {
+    font-size: 1.7rem;
+    color: var(--green);
+}
+
+.single-event p {
+    margin: 20px 0px;
+}
+
+@media ( max-width: 575px ) {
+
+    .foro-gallery { height: 30vh; }
+
+    .foro-gallery img {
+        height: 30vh;
+        object-fit: contain;
+    }
+
+    .single-event img { 
+        height: 250px;
+    }
+}
